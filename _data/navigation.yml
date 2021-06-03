@@ -1,0 +1,5 @@
+- name: Home
+  short: '/'
+  url: /
+- name: Tutorial
+  url: /tutorial

@@ -1,0 +1,15 @@
+<nav class="main-navbar">
+    <div class="left-nav">
+        <a href="{{ '/' | relative_url }}">
+            <img class="site-icon" src="{{ site.icon | relative_url }}">
+        </a>
+    </div>
+    <div class="center-nav">
+        {% for item in site.data.navigation %}
+        <a class="nav-link" href="{{ item.url | relative_url }}">
+            {{item.name}}
+        </a>
+        {% endfor %}
+    </div>
+    <div class="right-nav"></div>
+</nav>

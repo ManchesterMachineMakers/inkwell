@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Red+Hat+Text&display=swap" rel="stylesheet">
+<link rel="icon" href="/assets/InkwellLogo.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Home - Inkwell</title>
+<link rel="stylesheet" href="/assets/css/main.css">
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Home | Inkwell</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Home" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="/" />
+<meta property="og:url" content="/" />
+<meta property="og:site_name" content="Inkwell" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Home" />
+<script type="application/ld+json">
+{"headline":"Home","url":"/","@type":"WebSite","name":"Inkwell","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+</head>
+  <body><nav class="main-navbar">
+    <div class="left-nav">
+        <a href="/">
+            <img class="site-icon" src="/assets/InkwellLogo.svg">
+        </a>
+    </div>
+    <div class="center-nav">
+        
+        <a class="nav-link" href="/">
+            Home
+        </a>
+        
+        <a class="nav-link" href="/tutorial">
+            Tutorial
+        </a>
+        
+    </div>
+    <div class="right-nav"></div>
+</nav><main>
+    <div class="brand">
+        <div class="brand-header">
+            <img src="/assets/InkwellLogo.svg" alt="Logo" class="brand-logo" height="128" width="128">
+            <h1 class="brand-name">Inkwell</h1>
+        </div>
+        <h2 class="brand-slogan">A modern theme for Jekyll sites</h2>
+        <div class="brand-buttons">
+            
+            <a href="#get-started" class="btn btn-go">Get Started</a>
+            
+        </div>
+    </div>
+    <div class="main-content">
+        <h1 id="inkwell">Inkwell</h1>
+<p>Inkwell is a modern theme for Jekyll sites.</p>
+
+<h2 id="get-started">Get Started</h2>
+<p>To use Inkwell in your site, use the normal GitHub Pages <code class="language-plaintext highlighter-rouge">remote_theme</code> method:</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">remote_theme</span><span class="pi">:</span> <span class="s">ManchesterMachineMakers/inkwell</span>
+</code></pre></div></div>
+<p>Some more syntax:</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.lang.reflect.*</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.lang.annotation.*</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Basic</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// SETUP //</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello Java Reflection"</span><span class="o">);</span>
+
+        <span class="c1">// GETTING THE NAME OF A CLASS //</span>
+        <span class="nc">Class</span><span class="o">&lt;?&gt;</span> <span class="n">cls</span> <span class="o">=</span> <span class="nc">Basic</span><span class="o">.</span><span class="na">class</span><span class="o">;</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The class's name is "</span> <span class="o">+</span> <span class="n">cls</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+        
+        <span class="c1">// GETTING THE NAME OF A METHOD //</span>
+        <span class="nc">Basic</span> <span class="n">basic</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Basic</span><span class="o">();</span>
+        <span class="n">basic</span><span class="o">.</span><span class="na">doSomething</span><span class="o">(</span><span class="s">"whatever"</span><span class="o">);</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="nc">Method</span> <span class="n">doSomething</span> <span class="o">=</span> <span class="n">cls</span><span class="o">.</span><span class="na">getMethod</span><span class="o">(</span><span class="s">"doSomething"</span><span class="o">,</span> <span class="nc">String</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The method's name is "</span> <span class="o">+</span> <span class="n">doSomething</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+        <span class="o">}</span> <span class="k">catch</span><span class="o">(</span><span class="nc">NoSuchMethodException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"A whatsit happened: "</span> <span class="o">+</span> <span class="n">e</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">doSomething</span><span class="o">(</span><span class="nc">String</span> <span class="n">whatever</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Doing something very interesting..."</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Whatever is "</span> <span class="o">+</span> <span class="n">whatever</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+    </div>
+</main>
+  </body>
+</html>

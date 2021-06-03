@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<main>
+    <div class="brand">
+        <div class="brand-header">
+            <img src="{{ page.header.logo }}" alt="Logo" class="brand-logo" height="128" width="128">
+            <h1 class="brand-name">{{ page.header.title }}</h1>
+        </div>
+        <h2 class="brand-slogan">{{ page.header.slogan }}</h2>
+        <div class="brand-buttons">
+            {% for button in page.header.buttons %}
+            <a href="{{ button.url }}" class="btn btn-go">{{ button.title }}</a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="main-content">
+        {{ content }}
+    </div>
+</main>

@@ -1,0 +1,89 @@
+$primary: #0090f7;
+$header-bg: #006bf7;
+@import "inkwell/syntax-highlighting";
+@import "inkwell/nav";
+
+main {
+  min-width: 100%;
+  font-family: "Red Hat Text";
+  /*   margin: 0;
+  padding: 0; */
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+div.brand {
+  min-width: 100%;
+  font-family: "Red Hat Display";
+  padding: 50px;
+  color: white;
+  box-sizing: border-box;
+  background: linear-gradient(91.71deg, #006bf7 0%, #0090f7 100%);
+}
+h1.brand-name {
+  display: inline;
+  font-size: 70pt;
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+}
+img.brand-logo {
+  vertical-align: top;
+  border-radius: 15px;
+  width: 128px;
+}
+h2.brand-slogan {
+  font-weight: 300;
+  font-style: italic;
+  margin-left: calc(128px + 20px);
+  margin-top: 5px;
+}
+div.main-content {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.btn {
+  display: inline-block;
+  background-color: $primary;
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: none;
+  transition-property: box-shadow;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  font-family: "Red Hat Display";
+  font-size: medium;
+}
+.btn:hover {
+  box-shadow: 1px 2px 3px 1px #777;
+}
+.btn:active {
+  background-color: darken($primary, 10%);
+}
+.block {
+  display: block;
+}
+.btn-go::after {
+  content: "➔";
+  margin-left: 10px;
+  font-family: "Red Hat Display";
+}
+div.brand-buttons {
+  margin-left: 148px;
+  .btn {
+    margin-right: 20px;
+    box-shadow: none;
+    transition-property: background-color;
+    background-color: $header-bg;
+    border: 1px solid white;
+    box-sizing: border-box;
+    &:hover {
+      background-color: black;
+      border: 1px solid black;
+    }
+  }
+}
