@@ -4,3 +4,4 @@ title: "Inkwell" # the name of your site, e.g. ACME Corp.
 icon: /assets/InkwellLogo.svg
 plugins:
   - jekyll-seo-tag
+theme: minimal
