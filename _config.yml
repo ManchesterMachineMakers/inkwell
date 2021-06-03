@@ -1,4 +1,5 @@
 title: "Inkwell" # the name of your site, e.g. ACME Corp.
+baseurl: "/inkwell"
 icon: /assets/InkwellLogo.svg
 plugins:
   - jekyll-seo-tag
