@@ -24,16 +24,19 @@ nav.main-navbar {
     }
     input#nav-collapse-toggle {
         display: none;
-        &:checked + .center-nav {
-            display: flex;
-            position: absolute;
-            right: 0;
-            top: 60px;
-            background-color: white;
-            border-radius: 15px;
-            box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
-            a.nav-link {
-                box-shadow: none;
+        @media screen and (max-width: $responsive-breakpoint) {
+            &:checked + .center-nav {
+                display: flex;
+                position: absolute;
+                right: 0;
+                top: 60px;
+                background-color: white;
+                border-radius: 15px;
+                box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+                margin-right: 3px;
+                a.nav-link {
+                    box-shadow: none;
+                }
             }
         }
         ~ label {
