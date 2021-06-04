@@ -26,7 +26,7 @@ Any page with a layout other than `default` and with `toc: true` in its Frontmat
 All elements should be responsive.
 If you see anything not on the following list that isn't responsive, please [open an issue](https://github.com/ManchesterMachineMakers/inkwell/issues).
 #### Items To Be Implemented
-- Navbar
+- _None that I know of_
 
 ### Modern Code Styling
 ```js

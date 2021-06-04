@@ -106,7 +106,7 @@ div.sidebar-layout {
     flex-direction: column;
   }
   .sidebar {
-    @media(min-width: $responsive-breakpoint) {
+    @media(min-width: $responsive-breakpoint+1) {
       margin-right: 50px;
       max-width: 20%;
     }

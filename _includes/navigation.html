@@ -4,6 +4,7 @@
             <img class="site-icon" src="{{ site.icon | relative_url }}">
         </a>
     </div>
+    <input type="checkbox" id="nav-collapse-toggle">
     <div class="center-nav">
         {% for item in site.data.navigation %}
         <a class="nav-link" href="{{ item.url | relative_url }}">
@@ -11,5 +12,5 @@
         </a>
         {% endfor %}
     </div>
-    <div class="right-nav"></div>
+    <label for="nav-collapse-toggle">☰</label>
 </nav>

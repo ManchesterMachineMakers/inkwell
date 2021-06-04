@@ -11,7 +11,45 @@ nav.main-navbar {
     flex-direction: row;
     justify-content: space-between;
     color: white;
-    div, div * {
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &.center-nav {
+            @media screen and (max-width: $responsive-breakpoint) {
+                display: none;
+                flex-direction: column;
+            }
+        }
+    }
+    input#nav-collapse-toggle {
+        display: none;
+        &:checked + .center-nav {
+            display: flex;
+            position: absolute;
+            right: 0;
+            top: 60px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+            a.nav-link {
+                box-shadow: none;
+            }
+        }
+        ~ label {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            user-select: none;
+            cursor: pointer;
+            font-size: 30px;
+            margin: 3px;
+            @media screen and (min-width: $responsive-breakpoint+1) {
+                visibility: hidden;
+            }
+        }
+    }
+    div * {
         vertical-align: middle;
         display: inline-block;
     }
