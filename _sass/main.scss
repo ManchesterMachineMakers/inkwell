@@ -1,5 +1,7 @@
 $primary: #0090f7;
-$header-bg: #006bf7;
+$primary-alt: #006bf7;
+$gradient: linear-gradient(91.71deg, $primary-alt 0%, $primary 100%);
+$responsive-breakpoint: 768px;
 @import "inkwell/syntax-highlighting";
 @import "inkwell/nav";
 
@@ -20,14 +22,16 @@ div.brand {
   padding: 50px;
   color: white;
   box-sizing: border-box;
-  background: linear-gradient(91.71deg, #006bf7 0%, #0090f7 100%);
+  background: $gradient;
 }
 h1.brand-name {
-  display: inline;
+  @media (min-width: $responsive-breakpoint) {
+    display: inline;
+    margin-left: 20px;
+  }
   font-size: 70pt;
   padding: 0;
   margin: 0;
-  margin-left: 20px;
 }
 img.brand-logo {
   vertical-align: top;
@@ -37,16 +41,17 @@ img.brand-logo {
 h2.brand-slogan {
   font-weight: 300;
   font-style: italic;
-  margin-left: calc(128px + 20px);
+  @media(min-width: $responsive-breakpoint) {
+    margin-left: 148px;
+  }
   margin-top: 5px;
 }
 div.main-content {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin: 50px;
 }
 .btn {
   display: inline-block;
-  background-color: $primary;
+  background: $gradient;
   text-decoration: none;
   color: white;
   padding: 10px 30px;
@@ -59,10 +64,11 @@ div.main-content {
   font-size: medium;
 }
 .btn:hover {
-  box-shadow: 1px 2px 3px 1px #777;
+  box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.3);
 }
 .btn:active {
-  background-color: darken($primary, 10%);
+  background-image: none;
+  background-color: $primary-alt;
 }
 .block {
   display: block;
@@ -73,17 +79,68 @@ div.main-content {
   font-family: "Red Hat Display";
 }
 div.brand-buttons {
-  margin-left: 148px;
+  @media (min-width: $responsive-breakpoint) {
+    margin-left: 148px;
+  }
   .btn {
     margin-right: 20px;
     box-shadow: none;
     transition-property: background-color;
-    background-color: $header-bg;
+    background-image: none;
+    background-color: transparent;
     border: 1px solid white;
     box-sizing: border-box;
     &:hover {
       background-color: black;
       border: 1px solid black;
     }
+    margin-top: 20px;
+  }
+}
+
+div.sidebar-layout {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  @media(max-width: $responsive-breakpoint) {
+    flex-direction: column;
+  }
+  .sidebar {
+    @media(min-width: $responsive-breakpoint) {
+      margin-right: 50px;
+      max-width: 20%;
+    }
+    overflow: auto;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    > ul {
+      padding-left: 0;
+    }
+    ul {
+      list-style-type: none;
+      li {
+        margin-top: 5px;
+        a {
+          border-bottom: 1px solid black;
+          &:hover, &:focus {
+            border-color: $primary;
+          }
+        }
+      }
+    }
+  }
+  .sidebar-content {
+    flex: 1;
+  }
+}
+a {
+  text-decoration: none;
+  color: $primary;
+  &:visited {
+  }
+  &:hover:not(.btn) {
+    color: $primary-alt;
   }
 }

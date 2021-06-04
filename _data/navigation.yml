@@ -1,5 +1,6 @@
 - name: Home
-  short: '/'
   url: /
 - name: Tutorial
   url: /tutorial
+- name: Components
+  url: /components

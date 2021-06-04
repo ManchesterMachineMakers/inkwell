@@ -6,45 +6,36 @@ header:
     logo: /assets/InkwellLogo.svg
     buttons:
         - title: Get Started
-          url: '#get-started'
+          url: '/tutorial'
+        - title: Components
+          url: '/components'
+        - title: GitHub
+          url: 'https://github.com/ManchesterMachineMakers/inkwell'
 title: "Home"
+toc: true
 ---
 
 # Inkwell
 Inkwell is a modern theme for Jekyll sites.
 
-## Get Started
-To use Inkwell in your site, use the normal GitHub Pages `remote_theme` method:
-```yaml
-remote_theme: ManchesterMachineMakers/inkwell
-```
-Some more syntax:
-```java
-import java.lang.reflect.*;
-import java.lang.annotation.*;
+## Features
+### Table of Contents
+Any page with a layout other than `default` and with `toc: true` in its Frontmatter will get an automatically-generated responsive table-of-contents sidebar.
 
-public class Basic {
-    public static void main(String[] args) {
-        // SETUP //
-        System.out.println("Hello Java Reflection");
+### Responsive
+All elements should be responsive.
+If you see anything not on the following list that isn't responsive, please [open an issue](https://github.com/ManchesterMachineMakers/inkwell/issues).
+#### Items To Be Implemented
+- Navbar
 
-        // GETTING THE NAME OF A CLASS //
-        Class<?> cls = Basic.class;
-        System.out.println("The class's name is " + cls.getName());
-        
-        // GETTING THE NAME OF A METHOD //
-        Basic basic = new Basic();
-        basic.doSomething("whatever");
-        try {
-            Method doSomething = cls.getMethod("doSomething", String.class);
-            System.out.println("The method's name is " + doSomething.getName());
-        } catch(NoSuchMethodException e) {
-            System.out.println("A whatsit happened: " + e.toString());
-        }
-    }
-    public void doSomething(String whatever) {
-        System.out.println("Doing something very interesting...");
-        System.out.println("Whatever is " + whatever);
-    }
+### Modern Code Styling
+```js
+function doSomething(argument) {
+  const el = document.createElement("div");
+  el.appendChild(document.createTextNode(argument));
+  document.body.appendChild(el);
 }
 ```
+See more examples here:
+
+<a class="btn btn-go" href="{{'/components#syntax-highlighting' | relative_url}}">Components: Syntax Highlighting</a>

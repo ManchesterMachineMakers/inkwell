@@ -3,6 +3,18 @@ layout: default
 ---
 <main>
     <div class="main-content">
-        {{ content }}
+        {% if page.toc %}
+        <div class="sidebar-layout">
+            <div class="sidebar">
+                <h1 class="toc-header">Contents</h1>
+                {% include toc.html html=content %}
+            </div>
+            <div class="sidebar-content">
+        {% endif %}
+            {{ content }}
+        {% if page.toc %}
+            </div>
+        </div>
+        {% endif %}
     </div>
 </main>

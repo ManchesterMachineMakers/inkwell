@@ -2,6 +2,12 @@ pre,
 code {
     font-family: "Source Code Pro", monospace;
 }
+code.language-plaintext {
+    background-color: rgb(206, 206, 206);
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
 .highlight {
     border-radius: 10px;
     border: none;
@@ -115,7 +121,7 @@ code {
     .m {
         color: rgb(28, 235, 235);
     } // Literal.Number
-    .s {
+    .s, .dl {
         color: rgb(0, 154, 214);
     } // Literal.String
     .na {
@@ -128,7 +134,7 @@ code {
         color:rgb(28, 235, 183);
     } // Name.Class
     .no {
-        color: #008080;
+        color: #02dbc9;
     } // Name.Constant
     .ni {
         color: #800080;
@@ -142,10 +148,10 @@ code {
     .nn {
     } // Name.Namespace
     .nt {
-        color: #000080;
+        color: #00a84c;
     } // Name.Tag
     .nv {
-        color: #008080;
+        color: #00c278;
     } // Name.Variable
     .ow {
         font-weight: bold;
@@ -166,43 +172,43 @@ code {
         color: #099;
     } // Literal.Number.Oct
     .sb {
-        color: #d14;
+        color: rgb(0, 154, 214);
     } // Literal.String.Backtick
     .sc {
-        color: #d14;
+        color: rgb(0, 154, 214);
     } // Literal.String.Char
     .sd {
-        color: #d14;
+        color: rgb(0, 154, 214);
     } // Literal.String.Doc
     .s2 {
-        color: #d14;
+        color: rgb(0, 154, 214);
     } // Literal.String.Double
     .se {
-        color: #d14;
+        color: rgb(0, 154, 214);
     } // Literal.String.Escape
     .sh {
-        color: #d14;
+        color: rgb(0, 154, 214);
     } // Literal.String.Heredoc
     .si {
-        color: #d14;
+        color: rgb(0, 154, 214);
     } // Literal.String.Interpol
     .sx {
-        color: #d14;
+        color: rgb(0, 154, 214);
     } // Literal.String.Other
     .sr {
         color: #009926;
     } // Literal.String.Regex
     .s1 {
-        color: #d14;
+        color: rgb(0, 154, 214);
     } // Literal.String.Single
     .ss {
-        color: #990073;
+        color: #d36db9;
     } // Literal.String.Symbol
     .bp {
         color: #999;
     } // Name.Builtin.Pseudo
     .vc {
-        color: #008080;
+        color: #00d4d4;
     } // Name.Variable.Class
     .vg {
         color: #008080;

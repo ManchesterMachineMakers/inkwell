@@ -3,4 +3,4 @@ baseurl: "/inkwell"
 icon: /assets/InkwellLogo.svg
 plugins:
   - jekyll-seo-tag
-theme: jekyll-theme-minimal
+theme: minima # Not actually used, this is just so that Pages publishes.
