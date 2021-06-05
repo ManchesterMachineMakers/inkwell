@@ -8,7 +8,7 @@ toc: true
 
 ### Setting the Theme
 
-To start with Inkwell, put it in your website as a `remote_theme` in `config.yml`:
+To start with Inkwell, put it in your website as a `remote_theme` in `_config.yml`:
 
 ```yaml
 remote_theme: ManchesterMachineMakers/inkwell
