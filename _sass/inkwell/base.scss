@@ -134,7 +134,7 @@ a {
     color: $primary;
     &:visited {
     }
-    &:hover:not(.btn) {
+    &:hover:not(.btn, .nav-link) {
         color: $primary-alt;
     }
 }

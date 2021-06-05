@@ -27,6 +27,8 @@ nav.main-navbar {
         @media screen and (max-width: $responsive-breakpoint) {
             &:checked + .center-nav {
                 display: flex;
+                flex-direction: column;
+                align-items: stretch;
                 position: absolute;
                 right: 0;
                 top: 60px;
@@ -35,7 +37,7 @@ nav.main-navbar {
                 box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
                 margin-right: 3px;
                 a.nav-link {
-                    box-shadow: none;
+                    text-align: center;
                 }
             }
         }
@@ -70,6 +72,11 @@ a.nav-link {
     box-sizing: border-box;
     display: inline-block;
     text-decoration: none;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
     margin: 5px;
+    transition-property: background-color color;
+    transition-duration: 0.1s;
+    &:hover {
+        color: white;
+        background-color: black;
+    }
 }
