@@ -19,6 +19,11 @@ toc: true
 Inkwell is a modern theme for Jekyll sites.
 
 ## Features
+
+### Landing Page
+
+Inkwell's `landing` layout allows you to have a nicely-formatted landing page with a jumbotron and navigation buttons (like this page).
+
 ### Table of Contents
 Any page with a layout other than `default` and with `toc: true` in its Frontmatter will get an automatically-generated responsive table-of-contents sidebar.
 
