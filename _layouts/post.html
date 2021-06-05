@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<div class="brand">
+    <div class="brand-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+    </div>
+    <h2 class="post-meta">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {{ page.date | date: date_format }}
+        </time>
+        {%- if page.modified_date -%}
+        ~
+        {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+        <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+            {{ mdate | date: date_format }}
+        </time>
+        {%- endif -%}
+        {%- if page.author -%}
+        • {% for author in page.author %}
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+        {%- if forloop.last == false %}, {% endif -%}
+        {% endfor %}
+        {%- endif -%}
+    </h2>
+    <div class="brand-buttons">
+        {% for button in page.header.buttons %}
+        <a href="{{ button.url | relative_url }}" class="btn btn-go">{{ button.title }}</a>
+        {% endfor %}
+    </div>
+</div>
+<main>
+    <div class="main-content">
+        {% if page.toc %}
+        <div class="sidebar-layout">
+            <div class="sidebar">
+                <h1 class="toc-header">Contents</h1>
+                {% include toc.html html=content %}
+            </div>
+            <div class="sidebar-content">
+        {% endif %}
+            {{ content }}
+        {% if page.toc %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</main>

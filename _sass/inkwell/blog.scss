@@ -1,0 +1,32 @@
+h2.post-list-heading {
+    display: block;
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+ul.post-list {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+        border-radius: 15px;
+        padding: 15px;
+        display: block;
+        box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.3);
+        span.post-meta {
+            font-size: 12pt;
+        }
+        h3 {
+            font-size: 24pt;
+            font-family: 'Red Hat Display';
+        }
+    }
+}
+h1.post-title {
+    font-size: 70pt;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+h2.post-meta {
+    font-style: italic;
+    font-size: 16pt;
+    margin: 0;
+}
