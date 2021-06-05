@@ -1,23 +1,8 @@
-<svg width="142" height="142" viewBox="0 0 142 142" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d)">
-<rect x="5" y="3" width="128" height="128" rx="15" fill="black"/>
-<rect x="5.5" y="3.5" width="127" height="127" rx="14.5" stroke="black"/>
-</g>
-<path d="M39.6808 20.9959L21.2308 110.996C20.5952 114.096 22.9639 117 26.129 117H111.341C114.516 117 116.887 114.079 116.234 110.972L97.3342 20.9724C96.8481 18.6575 94.8063 17 92.4409 17H44.579C42.2046 17 40.1577 18.6699 39.6808 20.9959Z" fill="white" stroke="black"/>
-<path d="M110.844 117H26.6235C23.4602 117 21.0919 114.1 21.7244 111L30.2588 69.1818C30.4173 68.4051 30.7583 67.6772 31.2535 67.0581L33.2264 64.5919C35.009 62.3638 38.2918 62.0768 40.4339 63.9619L46.2926 69.1175C47.9092 70.5401 50.2551 70.7679 52.1151 69.6828L59.1138 65.6003C60.3164 64.8987 61.7571 64.7304 63.089 65.1358L80.9273 70.5648C82.7993 71.1346 84.8316 70.5599 86.1281 69.0943L92.8054 61.5461C94.375 59.7718 96.9743 59.3424 99.0311 60.5177L104.048 63.3846C105.289 64.094 106.168 65.301 106.461 66.7004L115.738 110.975C116.388 114.081 114.018 117 110.844 117Z" fill="#0090F7" stroke="#0090F7"/>
-<circle cx="51" cy="50" r="5" fill="#0090F7"/>
-<circle cx="73.5" cy="41.5" r="4.5" fill="#0090F7"/>
-<circle cx="90" cy="51" r="5" fill="#0090F7"/>
-<defs>
-<filter id="filter0_d" x="0" y="0" width="142" height="142" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-<feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow"/>
-<feOffset dx="2" dy="4"/>
-<feGaussianBlur stdDeviation="3"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-</filter>
-</defs>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="127" height="127" rx="14.5" fill="black" stroke="black"/>
+<path d="M34.6808 17.9959L16.2308 107.996C15.5952 111.096 17.9639 114 21.129 114H106.341C109.516 114 111.887 111.079 111.234 107.972L92.3342 17.9724C91.8481 15.6575 89.8063 14 87.4409 14H39.579C37.2046 14 35.1577 15.6699 34.6808 17.9959Z" fill="white" stroke="black"/>
+<path d="M105.844 114H21.6235C18.4602 114 16.0919 111.1 16.7244 108L25.2588 66.1818C25.4173 65.4051 25.7583 64.6772 26.2535 64.0581L28.2264 61.5919C30.009 59.3638 33.2918 59.0768 35.4339 60.9619L41.2926 66.1175C42.9092 67.5401 45.2551 67.7679 47.1151 66.6828L54.1138 62.6003C55.3164 61.8987 56.7571 61.7304 58.089 62.1358L75.9273 67.5648C77.7993 68.1346 79.8316 67.5599 81.1281 66.0943L87.8054 58.5461C89.375 56.7718 91.9743 56.3424 94.0311 57.5177L99.048 60.3846C100.289 61.094 101.168 62.301 101.461 63.7004L110.738 107.975C111.388 111.081 109.018 114 105.844 114Z" fill="#0090F7" stroke="#0090F7"/>
+<circle cx="46" cy="47" r="5" fill="#0090F7"/>
+<circle cx="68.5" cy="38.5" r="4.5" fill="#0090F7"/>
+<circle cx="85" cy="48" r="5" fill="#0090F7"/>
 </svg>
