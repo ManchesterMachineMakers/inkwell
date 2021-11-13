@@ -12,6 +12,8 @@ remote_theme: ManchesterMachineMakers/inkwell
 
 ## What does it look like?
 ![screenshot](assets/screenshot.png)
+Or, with a sidebar:
+![screenshot 2](assets/screenshot-sidebar.png)
 See it [here](https://manchestermachinemakers.github.io/inkwell).
 
 ## What font is this?
