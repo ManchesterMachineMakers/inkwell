@@ -10,7 +10,7 @@ header:
         - title: Components
           url: '/components'
         - title: GitHub
-          url: 'https://github.com/ManchesterMachineMakers/inkwell'
+          url: 'https://github.com/aleksrutins/inkwell'
 title: "Home"
 toc: true
 ---
@@ -29,9 +29,9 @@ Any page with a layout other than `default` and with `toc: true` in its Frontmat
 
 ### Responsive
 All elements should be responsive.
-If you see anything not on the following list that isn't responsive, please [open an issue](https://github.com/ManchesterMachineMakers/inkwell/issues).
+If you see anything not on the following list that isn't responsive, please [open an issue](https://github.com/aleksrutins/inkwell/issues).
 #### Items To Be Implemented
-- _None that I know of_
+- Sidebar
 
 ### Modern Code Styling
 ```js

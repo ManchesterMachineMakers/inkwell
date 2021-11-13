@@ -3,7 +3,7 @@
 Inkwell is a modern Jekyll theme for GitHub Pages, made by Aleks Rutins and the Manchester Machine Makers.
 
 ## Getting Started
-Check out [the tutorial](https://manchestermachinemakers.github.io/inkwell/tutorial).
+Check out [the tutorial](https://aleksrutins.github.io/inkwell/tutorial).
 
 TL;DR:
 ```yaml
@@ -14,7 +14,7 @@ remote_theme: aleksrutins/inkwell
 ![screenshot](assets/screenshot.png)
 Or, with a sidebar:
 ![screenshot 2](assets/screenshot-sidebar.png)
-See it [here](https://manchestermachinemakers.github.io/inkwell).
+See it [here](https://aleksrutins.github.io/inkwell).
 
 ## What font is this?
 [Red Hat](https://redhatofficial.github.io/RedHatFont/).
