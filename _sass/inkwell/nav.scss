@@ -1,3 +1,4 @@
+// https://itnext.io/how-to-make-a-fancy-inverted-border-radius-in-css-5db048a53f95
 @mixin inverted-border-radius($radius, $bg) {
         content: "";
         position: absolute;
@@ -10,6 +11,8 @@
         border-top-left-radius: $radius;
         box-shadow: 0 -$radius 0 0 white;
 }
+
+// And now comes my code
 nav.main-navbar {
     position: sticky;
     position: -webkit-sticky;
