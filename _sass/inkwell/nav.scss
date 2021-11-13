@@ -93,6 +93,7 @@ a.nav-link {
     }
 }
 nav.nav-left {
+    pointer-events: all;
     display: flex;
     flex-direction: column;
     background-color: $primary-alt;
@@ -142,12 +143,16 @@ nav.nav-left {
 body.nav-left {
     display: flex;
     flex-direction: row;
+    pointer-events: none;
     main {
         min-width: unset;
         max-width: 80%;
         flex: 1;
         .brand {
-            position: relative;
+            position: sticky;
+            z-index: -1;
+            top: 0;
+            pointer-events: all;
         }
         .brand::before {
             @include inverted-border-radius(15px, $primary-alt)
@@ -157,6 +162,13 @@ body.nav-left {
             .sidebar {
                 max-width: unset;
             }
+        }
+        .main-content {
+            pointer-events: all;
+            background-color: white;
+            margin: 0;
+            padding: 50px;
+            border-top-left-radius: 15px;
         }
     }
 }
