@@ -16,6 +16,13 @@ div.brand {
     color: $primary-fg;
     box-sizing: border-box;
     background: $gradient;
+    &.small-brand {
+        padding: 5px;
+        padding-bottom: 20px;
+    }
+}
+span.brand-author {
+    text-transform: uppercase;
 }
 h1.brand-name {
     @media (min-width: $responsive-breakpoint) {

@@ -2,6 +2,17 @@
 layout: default
 ---
 <main>
+    {% if page.author %}
+    <div class="brand small-brand">
+        <span class="brand-author">
+            {% for author in page.author %}
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+            {%- if forloop.last == false %} • {% endif -%}
+            {% endfor %}
+        </span>
+    </div>
+    {% endif %}
     <div class="main-content">
         {% if page.toc %}
         <div class="sidebar-layout">
