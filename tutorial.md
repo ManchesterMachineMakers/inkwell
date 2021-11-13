@@ -11,7 +11,7 @@ toc: true
 To start with Inkwell, put it in your website as a `remote_theme` in `_config.yml`:
 
 ```yaml
-remote_theme: ManchesterMachineMakers/inkwell
+remote_theme: aleksrutins/inkwell
 ```
 
 ### Setting Configuration

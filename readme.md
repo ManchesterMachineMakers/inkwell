@@ -7,7 +7,7 @@ Check out [the tutorial](https://manchestermachinemakers.github.io/inkwell/tutor
 
 TL;DR:
 ```yaml
-remote_theme: ManchesterMachineMakers/inkwell
+remote_theme: aleksrutins/inkwell
 ```
 
 ## What does it look like?
