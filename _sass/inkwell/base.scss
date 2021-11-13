@@ -13,7 +13,7 @@ div.brand {
     min-width: 100%;
     font-family: "Red Hat Display";
     padding: 50px;
-    color: white;
+    color: $primary-fg;
     box-sizing: border-box;
     background: $gradient;
 }
@@ -45,7 +45,7 @@ div.main-content {
 .btn {
     background: $gradient;
     text-decoration: none;
-    color: white;
+    color: $primary-fg;
     padding: 10px 30px;
     border-radius: 15px;
     border: none;
@@ -81,7 +81,7 @@ div.brand-buttons {
         transition-property: background-color;
         background-image: none;
         background-color: transparent;
-        border: 1px solid white;
+        border: 1px solid $primary-fg;
         box-sizing: border-box;
         &:hover {
             background-color: black;

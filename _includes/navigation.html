@@ -1,3 +1,26 @@
+{% if site.nav_style == 'left' %}
+<nav class="nav-left">
+    <div class="sidebar-top">
+        <a href="{{ '/' | relative_url }}">
+            <img class="site-icon" src="{{ site.icon | relative_url }}">
+        </a>
+    </div>
+    {% for item in site.data.navigation %}
+    {% if item.name %}
+    <a class="sidebar-link" href="{{ item.url | relative_url }}" class="{% if item.url == page.url %}active{% endif %}">
+        {{item.name}}
+    </a>
+    {% else %}
+    <h2 class="section-heading">{{item.section}}</h2>
+    {% for item in item.items %}
+    <a class="sidebar-link" href="{{ item.url | relative_url }}" class="{% if item.url == page.url %}active{% endif %}">
+        {{item.name}}
+    </a>
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+</nav>
+{% else %}
 <nav class="main-navbar">
     <div class="left-nav">
         <a href="{{ '/' | relative_url }}">
@@ -7,10 +30,13 @@
     <input type="checkbox" id="nav-collapse-toggle">
     <div class="center-nav">
         {% for item in site.data.navigation %}
+        {% if item.name %}
         <a class="nav-link" href="{{ item.url | relative_url }}">
             {{item.name}}
         </a>
+        {% endif %}
         {% endfor %}
     </div>
     <label for="nav-collapse-toggle">☰</label>
 </nav>
+{% endif %}

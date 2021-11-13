@@ -85,6 +85,7 @@ To customize the styling, create `assets/css/main.scss`, `_sass/main.scss`, and 
 ```scss
 @import "inkwell/variables";
 @import "variables";
+@import "inkwell/flex";
 @import "inkwell/syntax-highlighting";
 @import "inkwell/nav";
 @import "inkwell/base";
@@ -95,6 +96,7 @@ And in `_sass/variables.scss`, customize the variables, as below:
 ```scss
 $primary: #0090f7; // Primary color
 $primary-alt: #006bf7; // Alternate primary color (generally should be darker)
+$primary-fg: #ffffff; // Foreground color for elements using the primary color as their background (there's probably a more succinct way of wording that)
 $gradient: linear-gradient(91.71deg, $primary-alt 0%, $primary 100%); // Gradient to use for everything
 $responsive-breakpoint: 768px; // Responsive breakpoint width
 ```

@@ -1,3 +1,15 @@
+@mixin inverted-border-radius($radius, $bg) {
+        content: "";
+        position: absolute;
+        
+        background-color: white;
+        bottom: -1px;
+        height: $radius * 2;
+        width: 100%;
+        left: $radius;
+        border-top-left-radius: $radius;
+        box-shadow: 0 -$radius 0 0 white;
+}
 nav.main-navbar {
     position: sticky;
     position: -webkit-sticky;
@@ -49,7 +61,7 @@ nav.main-navbar {
             cursor: pointer;
             font-size: 30px;
             margin: 3px;
-            @media screen and (min-width: $responsive-breakpoint+1) {
+            @media screen and (min-width: ($responsive-breakpoint + 1)) {
                 visibility: hidden;
             }
         }
@@ -78,5 +90,73 @@ a.nav-link {
     &:hover {
         color: white;
         background-color: black;
+    }
+}
+nav.nav-left {
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-alt;
+    padding: 20px;
+    width: 20%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    h2.section-heading {
+        font-size: small;
+        text-transform: uppercase;
+        color: $sidebar-fg;
+        font-family: 'Red Hat Display';
+        margin-left: 5px + 7px + $sidebar-item-active-underline-thickness;
+    }
+    a.sidebar-link {
+        box-sizing: content-box;
+        color: $primary-fg;
+        text-decoration: none;
+        margin-left: 5px;
+        font-family: "Red Hat Text";
+        transition-property: border-color;
+        transition-duration: 50ms;
+        margin-bottom: $sidebar-item-spacing - $sidebar-item-active-underline-thickness;
+        border: $sidebar-item-active-underline-thickness solid $sidebar-bg;
+        padding: 7px;
+        border-radius: 15px;
+        &:hover {
+            // border-bottom: $sidebar-item-active-underline;
+            // margin-bottom: $sidebar-item-spacing - $sidebar-item-active-underline-thickness;
+            background-color: darken($color: $sidebar-bg, $amount: 20);
+        }
+        &.active {
+            border-radius: 15px;
+            border: $sidebar-item-active-underline-thickness solid $sidebar-fg;
+            &:hover {
+                border-color: darken($color: $sidebar-bg, $amount: 20);
+            }
+        }
+    }
+    .sidebar-top a {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+body.nav-left {
+    display: flex;
+    flex-direction: row;
+    main {
+        min-width: unset;
+        max-width: 80%;
+        flex: 1;
+        .brand {
+            position: relative;
+        }
+        .brand::before {
+            @include inverted-border-radius(15px, $primary-alt)
+        }
+        .sidebar-layout {
+            flex-direction: column;
+            .sidebar {
+                max-width: unset;
+            }
+        }
     }
 }

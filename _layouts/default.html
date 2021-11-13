@@ -3,7 +3,11 @@
   <head>
     {%- include head.html -%}
   </head>
-  <body>
+  <body
+  {% if site.nav_style == 'left' %}
+  class="nav-left"
+  {% endif %}
+  >
     {%- include header.html -%}
     {{ content }}
   </body>

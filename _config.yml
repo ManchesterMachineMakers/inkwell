@@ -4,3 +4,5 @@ icon: /assets/InkwellLogo.svg
 plugins:
   - jekyll-seo-tag
 theme: minima # Not actually used, this is just so that Pages publishes.
+nav_style: left
+show_excerpts: true

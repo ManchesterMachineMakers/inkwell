@@ -4,3 +4,7 @@
   url: /tutorial
 - name: Components
   url: /components
+- section: Other Tools
+  items:
+    - name: Sidebars
+      url: /tutorial-sidebar
